@@ -67,7 +67,7 @@ const AddComment = ({ asin }) => {
           <Form.Label>Comment text</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Add comment here"
+            placeholder="Aggiungi un commento qui"
             value={comment.comment}
             onChange={handleCommentChange}
           />
@@ -86,7 +86,7 @@ const AddComment = ({ asin }) => {
             <option value={5}>5</option>
           </Form.Control>
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button data-testid="add-comment-btn" variant="primary" type="submit">
           Submit
         </Button>
       </Form>
